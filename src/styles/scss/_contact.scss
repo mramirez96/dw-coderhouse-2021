@@ -1,0 +1,26 @@
+
+$width-contact-form: 800px;
+
+.contactFormContainer {
+
+    @media screen and (min-width: $width-contact-form) {
+        width: $width-contact-form;
+        margin: auto;
+    }
+    
+    @media screen and (max-width: $width-contact-form) {
+        // No aplico un ancho y que se adapte
+    }
+}
+
+.contactForm {
+    display: grid;
+    text-align: left;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+
+#submitContactButton {
+    width: 200px;
+    justify-self: center;
+}

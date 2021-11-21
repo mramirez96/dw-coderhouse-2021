@@ -40,6 +40,10 @@ h1, h2, h3, h4 {
   transition: left 2.4s;
 }
 
+label, input {
+  font-family: "source-sans-regular";
+}
+
 p {
   margin-block-end: 1rem;
   margin-block-start: 1rem;
@@ -192,6 +196,24 @@ section {
     top: 0%;
   }
 }
+@media screen and (min-width: 800px) {
+  .contactFormContainer {
+    width: 800px;
+    margin: auto;
+  }
+}
+.contactForm {
+  display: grid;
+  text-align: left;
+  padding: 2rem;
+  row-gap: 1rem;
+}
+
+#submitContactButton {
+  width: 200px;
+  justify-self: center;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
