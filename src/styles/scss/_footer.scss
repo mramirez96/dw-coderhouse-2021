@@ -1,0 +1,16 @@
+footer {
+    /* Acomodar elementos - Flexbox */
+    display: flex;
+    flex:1;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Estética para la img del fondo */
+    height: 150px;
+    background-color: hsl($primary-h, $primary-s, $primary-l);
+    background-image: url("../../../src/media/photos/pokemon-snorlax.png");
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+

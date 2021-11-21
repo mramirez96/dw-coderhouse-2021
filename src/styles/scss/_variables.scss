@@ -1,0 +1,34 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: 'source-sans-regular';
+    src: url('./source-sans-pro/SourceSansPro-Regular.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'source-sans-bold';
+    src: url('./source-sans-pro/SourceSansPro-Bold.otf');
+    font-display: swap;
+}
+
+$text-title-regular: 'Lato', sans-serif;
+$text-paragraph-regular: 'source-sans-regular';
+$text-paragraph-bold: 'source-sans-bold';
+
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+/* Colores */
+$primary-h: 49;
+$primary-s: 75%;
+$primary-l: 75%;
+
+$secondary-h:49;
+$secondary-s:60%;
+$secondary-l:95%;
+
+$accent-h: 229;
+$accent-s: 75%;
+$accent-l: 75%;
+

@@ -1,0 +1,56 @@
+header {
+    /* Acomodar elementos - Flexbox */
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    padding-right: 1rem;
+
+    background-color: hsl($primary-h, $primary-s, $primary-l);
+}
+
+.logo {
+    display: flex;
+
+    height:3rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+
+    p {
+        align-self: center;
+    }
+
+    a {
+        padding-left: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+}
+
+#miCuentaBtn {
+    display: contents;
+    width: 2.25rem; 
+    height: 2.25rem;
+    background-color: hsl($primary-h, $primary-s, $primary-l); 
+}
+
+#miCuentaSvg {
+    width: 2.25rem; 
+    height: 2.25rem;
+    transition: all 1s;
+
+    &:hover {
+        width: 2.5rem; 
+        height: 2.5rem;
+        --primary-l: 50%;
+        border-radius: 50px;
+        background-color: hsl($primary-h, $primary-s, $primary-l);
+    }
+}
+
+.dropdownMenu {
+    background-color: hsl($primary-h, $primary-s, $primary-l);
+}

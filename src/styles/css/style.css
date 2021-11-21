@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+  font-family: "source-sans-regular";
+  src: url("./source-sans-pro/SourceSansPro-Regular.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "source-sans-bold";
+  src: url("./source-sans-pro/SourceSansPro-Bold.otf");
+  font-display: swap;
+}
+/* Colores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 16px;
+}
+
+/* Estilos generales */
+body {
+  background-color: #faf7eb;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: left 2.4s;
+}
+
+p {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  font-family: "source-sans-regular";
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button, .raisedBtn {
+  font-family: "source-sans-regular";
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  border: none;
+}
+.button:hover, .raisedBtn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.raisedBtn {
+  background-color: #8fa1ef;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  line-height: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: border-color 4s, background-color 0.5s;
+}
+.raisedBtn:hover {
+  border-color: black;
+  background-color: #a6b4f2;
+}
+
+/* Secciones */
+.iframeFullWidth {
+  height: 400px;
+  width: 90%;
+}
+
+.imgFullWidth {
+  width: 90%;
+}
+
+.imgMidWidth {
+  width: 50%;
+}
+
+.imgSmallWidth {
+  width: 25%;
+}
+
+.imgMidWidthFixed {
+  width: 20rem;
+}
+
+.endSection {
+  width: 100%;
+  margin-top: 2rem;
+  display: inline-block;
+  background-image: linear-gradient(#faf7eb, #f9f2d2);
+}
+
+.photoContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photoItem {
+  width: 100px;
+}
+
+#contacto {
+  font-size: 1.2rem;
+}
+
+/* Seccion portabilidad - deprecated */
+@media screen and (min-width: 800px) {
+  .gridContainerPortabilidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 3rem);
+    grid-auto-flow: column;
+    grid-template-areas: "image empty-first" "image title" "image text-one" "image text-two" "image buttons" "image empty-lastone";
+  }
+
+  .gridItemPortabilidad {
+    justify-self: left;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .gridItemPortabilidad:first-child {
+    justify-self: right;
+    margin-right: 2rem;
+    align-self: center;
+    grid-area: image;
+  }
+
+  .gridItemPortabilidad:nth-child(2) {
+    grid-area: title;
+  }
+
+  .gridItemPortabilidad:nth-child(3) {
+    grid-area: text-one;
+  }
+
+  .gridItemPortabilidad:nth-child(4) {
+    grid-area: text-two;
+  }
+
+  .gridItemPortabilidad:nth-child(5) {
+    grid-area: buttons;
+  }
+}
+@media screen and (max-width: 799px) {
+  .gridContainerPortabilidad {
+    display: block;
+  }
+}
+/* Seccion portabilidad */
+.imagePortabilidad {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.textPortabilidad {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+/* Clases animacion divs */
+.animatedTopToCenter > * {
+  animation: 1s linear 0s top-to-center;
+}
+
+@keyframes top-to-center {
+  0%, 25% {
+    opacity: 0;
+    transform: translateY(-35%);
+    top: -35%;
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateY(0%);
+    top: 0%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding-right: 0.5rem !important;
+}
+li a {
+  color: black;
+  text-align: center;
+  padding: 0.85rem 1rem !important;
+  text-decoration: none;
+  font-family: "source-sans-regular";
+  transition: all 1s !important;
+}
+li a:hover {
+  color: black;
+  border-radius: 25px;
+  background-color: #dfbc20;
+}
+
+header {
+  /* Acomodar elementos - Flexbox */
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 1rem;
+  background-color: #efde8f;
+}
+
+.logo {
+  display: flex;
+  height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.logo p {
+  align-self: center;
+}
+.logo a {
+  padding-left: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+#miCuentaBtn {
+  display: contents;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #efde8f;
+}
+
+#miCuentaSvg {
+  width: 2.25rem;
+  height: 2.25rem;
+  transition: all 1s;
+}
+#miCuentaSvg:hover {
+  width: 2.5rem;
+  height: 2.5rem;
+  --primary-l: 50%;
+  border-radius: 50px;
+  background-color: #efde8f;
+}
+
+.dropdownMenu {
+  background-color: #efde8f;
+}
+
+footer {
+  /* Acomodar elementos - Flexbox */
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  /* Estética para la img del fondo */
+  height: 150px;
+  background-color: #efde8f;
+  background-image: url("../../../src/media/photos/pokemon-snorlax.png");
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
