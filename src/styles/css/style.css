@@ -27,7 +27,7 @@ html {
 
 /* Estilos generales */
 body {
-  background-color: #faf7eb;
+  background-color: #fcf9f3;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@ section {
 }
 
 .raisedBtn {
-  background-color: #8fa1ef;
+  background-color: #b8cdf4;
   border: 1px solid transparent;
   border-radius: 5px;
   line-height: 2.5rem;
@@ -78,7 +78,7 @@ section {
 }
 .raisedBtn:hover {
   border-color: black;
-  background-color: #a6b4f2;
+  background-color: #a6c1f2;
 }
 
 /* Secciones */
@@ -107,7 +107,7 @@ section {
   width: 100%;
   margin-top: 2rem;
   display: inline-block;
-  background-image: linear-gradient(#faf7eb, #f9f2d2);
+  background-image: linear-gradient(#fcf9f3, #f0e9db);
 }
 
 .photoContainer {
@@ -235,7 +235,7 @@ li a {
 li a:hover {
   color: black;
   border-radius: 25px;
-  background-color: #dfbc20;
+  background-color: #d2bc93;
 }
 
 header {
@@ -246,7 +246,7 @@ header {
   align-items: center;
   padding: 1rem;
   padding-right: 1rem;
-  background-color: #efde8f;
+  background-color: #e7dbc5;
 }
 
 .logo {
@@ -268,7 +268,7 @@ header {
   display: contents;
   width: 2.25rem;
   height: 2.25rem;
-  background-color: #efde8f;
+  background-color: #e7dbc5;
 }
 
 #miCuentaSvg {
@@ -281,11 +281,11 @@ header {
   height: 2.5rem;
   --primary-l: 50%;
   border-radius: 50px;
-  background-color: #efde8f;
+  background-color: #e7dbc5;
 }
 
 .dropdownMenu {
-  background-color: #efde8f;
+  background-color: #e7dbc5;
 }
 
 footer {
@@ -296,7 +296,7 @@ footer {
   align-items: center;
   /* Estética para la img del fondo */
   height: 150px;
-  background-color: #efde8f;
+  background-color: #e7dbc5;
   background-image: url("../../../src/media/photos/pokemon-snorlax.png");
   background-position: center;
   background-size: 200px;
