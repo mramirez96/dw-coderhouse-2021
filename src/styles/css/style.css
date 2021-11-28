@@ -124,6 +124,29 @@ section {
   font-size: 1.2rem;
 }
 
+/* Seccion comencemos */
+@media screen and (min-width: 770px) {
+  .signUpFormContainer {
+    width: 70%;
+    margin: auto;
+  }
+}
+.signUpForm {
+  display: grid;
+  text-align: left;
+  padding: 2rem;
+  row-gap: 1rem;
+}
+
+#submitSignUpButton {
+  width: 200px;
+  justify-self: center;
+}
+
+.textComencemos {
+  align-self: center;
+}
+
 /* Seccion portabilidad */
 @media screen and (min-width: 992px) {
   .imagePortabilidad {

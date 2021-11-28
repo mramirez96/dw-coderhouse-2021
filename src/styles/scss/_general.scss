@@ -126,6 +126,36 @@ section {
     font-size: 1.2rem;
 }
 
+/* Seccion comencemos */
+
+.signUpFormContainer {
+    $width-signup-form:  770px;
+    @media screen and (min-width: $width-signup-form) {
+        width: 70%;
+        margin: auto;
+    }
+
+    @media screen and (max-width: $width-signup-form) {
+        // No aplico un ancho y que se adapte
+    }
+}
+
+.signUpForm {
+    display: grid;
+    text-align: left;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+
+#submitSignUpButton {
+    width: 200px;
+    justify-self: center;
+}
+
+.textComencemos {
+    align-self: center;
+}
+
 /* Seccion portabilidad */
 
 $width-max-portabilidad: 992px;
