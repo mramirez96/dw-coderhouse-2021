@@ -68,7 +68,7 @@ section {
 }
 
 .raisedBtn {
-  background-color: #b8cdf4;
+  background-color: #8aaff5;
   border: 1px solid transparent;
   border-radius: 5px;
   line-height: 2.5rem;
@@ -78,7 +78,7 @@ section {
 }
 .raisedBtn:hover {
   border-color: black;
-  background-color: #a6c1f2;
+  background-color: #a1bff7;
 }
 
 /* Secciones */
