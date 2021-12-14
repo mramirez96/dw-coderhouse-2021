@@ -27,6 +27,10 @@ h1, h2, h3, h4 {
     transition: left 2.4s;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 label, input {
     font-family: $text-paragraph-regular;
 }
