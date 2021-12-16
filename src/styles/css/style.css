@@ -249,6 +249,10 @@ header {
   background-color: #e7dbc5;
 }
 
+nav {
+  width: 100%;
+}
+
 .logo {
   display: flex;
   height: 3rem;
@@ -262,6 +266,10 @@ header {
   padding-left: 1rem;
   color: black;
   text-decoration: none;
+}
+
+.myNavbar {
+  flex-grow: 0;
 }
 
 #miCuentaBtn {
@@ -281,10 +289,6 @@ header {
   height: 2.5rem;
   --primary-l: 50%;
   border-radius: 50px;
-  background-color: #e7dbc5;
-}
-
-.dropdownMenu {
   background-color: #e7dbc5;
 }
 

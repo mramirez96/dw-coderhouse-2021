@@ -11,6 +11,10 @@ header {
     background-color: hsl($primary-h, $primary-s, $primary-l);
 }
 
+nav {
+    width: 100%;
+}
+
 .logo {
     display: flex;
 
@@ -28,6 +32,10 @@ header {
         text-decoration: none;
     }
     
+}
+
+.myNavbar {
+    flex-grow: 0; 
 }
 
 #miCuentaBtn {
@@ -49,8 +57,4 @@ header {
         border-radius: 50px;
         background-color: hsl($primary-h, $primary-s, $primary-l);
     }
-}
-
-.dropdownMenu {
-    background-color: hsl($primary-h, $primary-s, $primary-l);
 }
